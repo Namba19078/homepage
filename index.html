@@ -47,10 +47,6 @@
           <a href="#publications" class="hover:underline">Publications</a>
           <a href="#contact" class="hover:underline">Contact</a>
         </nav>
-        <div class="flex items-center gap-2">
-          <button id="themeToggle" class="no-print rounded-xl px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900">Toggle Theme</button>
-          <a href="cv.pdf" class="no-print rounded-xl px-3 py-1.5 text-xs border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-900" download>CV</a>
-        </div>
       </div>
     </div>
   </header>
@@ -61,7 +57,6 @@
       <div>
         <h1 class="text-3xl md:text-4xl font-bold">Masaki Nambata</h1>
         <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Researcher, <a class="underline" href="#">Nissan Motor Inc.</a></p>
-        <p class="mt-4 max-w-prose">I am a researcher at Nissan Motor Inc. focusing on autonomous driving and multimodal learning. My research interests include integrating vision-language models (VLMs), human gaze estimation. I aim to bridge the gap between human cognitive behavior and machine perception for safer, more intuitive autonomous systems.</p>
         <div class="mt-4 flex flex-wrap gap-3 text-sm">
           <a class="underline" href="mailto:masaknanbt01wl@gmail.com">masaknanbt01wl@gmail.com</a>
           <a class="underline" href="https://x.com/banaB0120">X/Twitter (@banaB0120)</a>
@@ -73,17 +68,15 @@
 
   <section id="about" class="mx-auto max-w-5xl px-4 mt-10">
     <h2 class="text-xl font-semibold mb-4">About</h2>
-    <p class="max-w-prose leading-relaxed">Hello, I’m Masaki Nambata. I’m passionate about research that connects human perception and autonomous driving intelligence. My primary focus is on Human-like Guidance — a framework that utilizes visual and linguistic cues, such as gaze and attention modeling, to make machine-generated navigation more natural and human-centric. I am also exploring how Vision-Language Models (VLMs) can enhance contextual understanding in multimodal driving scenarios. My goal is to create intelligent systems that communicate and perceive in a human-like way, leading to safer and more explainable autonomy.</p>
+    <p class="max-w-prose leading-relaxed">Hello, I’m Maski. My research focuses on autonomous driving, vision-language models (VLMs), and human gaze estimation. I aim to build intelligent systems that can perceive and communicate in a human-like manner.</p>
   </section>
 
   <section id="interests" class="mx-auto max-w-5xl px-4 mt-12">
     <h2 class="text-xl font-semibold mb-4">Research Interests</h2>
     <ul class="list-disc pl-5 space-y-1">
-      <li>Human-like Guidance for Autonomous Driving</li>
+      <li>Autonomoud Driving field</li>
       <li>Vision-Language Models (VLMs) and Multimodal Learning</li>
-      <li>Human Gaze and Attention Modeling</li>
-      <li>Trajectory Prediction and Risk Assessment</li>
-      <li>Reinforcement Learning for Autonomous Behavior</li>
+      <li>Human Gaze estimation</li>
     </ul>
   </section>
 
@@ -142,12 +135,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const tbtn = document.getElementById('themeToggle');
-    if (tbtn) tbtn.addEventListener('click', () => {
-      const html = document.documentElement;
-      const isDark = html.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
   </script>
 </body>
 </html>
